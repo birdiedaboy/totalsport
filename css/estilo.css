@@ -1,0 +1,32 @@
+
+html, body{
+    background: black;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
+}
+
+section{
+    
+  display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: inherit;
+}
+
+section article{
+    background: #dddd88;
+   
+    
+}
+body section article img{
+    
+
+    
+}
+
+body footer{
+    
+}
