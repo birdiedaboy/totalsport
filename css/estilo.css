@@ -1,28 +1,41 @@
 
 html, body{
-    background: black;
+    background: #494A4A;
     margin: 0;
     padding: 0;
     height: 100%;
     
 }
+nav {
+     background-color: aliceblue;
+    padding: 1%;
+}
 
 section{
     
   display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: inherit;
+    height: 90%;
+
+    
+
+}
+
+section p {
+    padding: 1%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 7vw;
+    text-align: center;
 }
 
 section article{
-    background: #dddd88;
+    background: #;
    
     
 }
 body section article img{
-    
 
     
 }
