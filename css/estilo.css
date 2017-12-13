@@ -1,9 +1,108 @@
+/*CSS RESET BDB88 - HTML5 DOCTOR */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* CSS RESET END*/
 
 html, body{
     background: #494A4A;
     margin: 0;
     padding: 0;
-    height: 80%;
+    height: 100%;
     
 }
 nav {
@@ -20,6 +119,11 @@ nav {
     height: 8vh;
     z-index: 1;
 }
+nav a {
+    font-family: Arvo;
+    font-size: 1.5em;
+    color: black;
+}
 #head{
     padding: 3.1vh;
     background-color: black;
@@ -29,10 +133,12 @@ nav {
 
 nav a img{
     background-color: none;
-    padding-right: 50%;
-
-   
-   
+    padding-right: 50%; 
+    
+}
+#logo{
+    z-index: 1;
+    position: fixed;
     
 }
 .slider{
@@ -79,6 +185,7 @@ nav a img{
   100% { opacity: 0; }
 }
 
+
 section:nth-child(2) {
     display: flex;
     height: 55vw;
@@ -86,24 +193,35 @@ section:nth-child(2) {
     margin: 0;
     padding: 0;
     top: 8vh;
-
-    
-
 }
 
+
 section:nth-child(3) {
+    padding-top: 8vh;
+    margin-top: 5vh;
+    height: 50%;
+    background-image: url(../img/darkness.png);
+}
+section:nth-child(3) article:nth-child(2) {
+    margin-top: 6vh;
+}
+
+.planes{
+   
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    height: 100%;
-    background-image: url(../img/darkness.png);
+    justify-content: space-around;
+    
+}
+small{
+    font-size: 0.4em;
+    
 }
 
 section p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
-    font-size: 7vw;
+    font-size: 3.9em;
     text-align: center;
     color: beige;
 }
