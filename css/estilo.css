@@ -214,8 +214,10 @@ section:nth-child(3) {
 }
 
 h2{
-    font-size: 6em;
-    color: aliceblue;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 8em;
+    color: beige;
     text-align: center;
     
 }
