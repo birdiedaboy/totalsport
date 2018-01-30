@@ -207,9 +207,9 @@ section:nth-child(2) {
 
 
 section:nth-child(3) {
-    padding-top: 8vh;
-    margin-top: 5vh;
-    height: 70%;
+    padding-top: vh;
+    margin-top: 8vh;
+    height: 100%;
     background-image: url(../img/darkness.png);
 }
 
@@ -342,3 +342,29 @@ footer address{
     text-align: center;
         
 }
+
+@media all and (max-width : 768px) {
+    
+    .planes{
+   
+    display: flex;
+        flex-direction: column;
+    }
+        
+    section:nth-child(3){
+        height: auto;
+    }
+    section p{
+        font-size: 3em;
+    }
+    
+    h2{
+       font-size: 6em;
+    }
+    .equipogeneral{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+}
+
