@@ -124,6 +124,9 @@ nav a {
     font-size: 1.5em;
     color: black;
 }
+nav a:hover { 
+	background-color: #000000; 
+}
 #head{
     padding: 3.1vh;
     background-color: black;
@@ -136,6 +139,27 @@ nav a img{
     padding-right: 50%; 
     
 }
+nav ul{
+    list-style: none;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+    
+}
+
+nav ul li{
+    
+    align-content: space-around;
+}
+
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
 #logo{
     z-index: 1;
     position: fixed;
@@ -341,4 +365,103 @@ footer address{
     font-size: 2vw;
     text-align: center;
         
+}
+
+
+
+@media all and (max-width : 768px){
+    
+    .toggle + a,
+	.menu {
+		display: none;
+	}
+
+.toggle {
+		display: flex;
+		background-color: #254441;
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px;
+		text-decoration:none;
+		border:none;
+	}
+
+.toggle:hover {
+		background-color: #000000;
+	}
+
+	/* Display Dropdown when clicked on Parent Lable */
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+
+	/* Change menu item's width to 100% */
+	nav ul li {
+		display: block;
+		width: 100%;
+		}
+
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+	}
+
+	nav ul ul ul a {
+		padding: 0 80px;
+	}
+
+	nav a:hover,
+ 	nav ul ul ul a {
+		background-color: #000000;
+	}
+  
+	nav ul li ul li .toggle,
+	nav ul ul a,
+  nav ul ul ul a{
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px; 
+	}
+  
+  
+	nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color: #212121; 
+	}
+
+	/* Hide Dropdowns by Default */
+	nav ul ul {
+		float: none;
+		position:static;
+		color: #ffffff;
+		/* has to be the same number as the "line-height" of "nav a" */
+	}
+		
+	/* Hide menus on hover */
+	nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
+	}
+		
+	/* Fisrt Tier Dropdown */
+	nav ul ul li {
+		display: block;
+		width: 100%;
+	}
+
+	nav ul ul ul li {
+		position: static;
+		/* has to be the same number as the "width" of "nav ul ul li" */ 
+
+	}
+
+}
+
+@media all and (max-width : 330px) {
+
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+
 }
