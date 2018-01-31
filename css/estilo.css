@@ -207,10 +207,11 @@ section:nth-child(2) {
 
 
 section:nth-child(3) {
-    padding-top: vh;
-    margin-top: 8vh;
+    box-sizing: border-box;
+    
     height: 100%;
     background-image: url(../img/darkness.png);
+    padding: 10%;
 }
 
 h2{
@@ -233,6 +234,7 @@ section:nth-child(3) article:nth-child(2) {
     justify-content: space-around;
     margin-bottom: 5vh;
     
+    
 }
 small{
     font-size: 0.4em;
@@ -242,7 +244,7 @@ small{
 section p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
-    font-size: 3.9em;
+    font-size: 3.5em;
     text-align: center;
     color: beige;
 }
