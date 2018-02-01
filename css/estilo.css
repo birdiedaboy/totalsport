@@ -209,7 +209,7 @@ section:nth-child(2) {
 section:nth-child(3) {
     box-sizing: border-box;
     
-    height: 100%;
+    min-height: 100%;
     background-image: url(../img/darkness.png);
     padding: 10%;
 }
