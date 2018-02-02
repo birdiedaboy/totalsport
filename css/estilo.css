@@ -217,7 +217,7 @@ section:nth-child(3) {
 h2{
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
-    font-size: 8em;
+    font-size: 6em;
     color: beige;
     text-align: center;
     
@@ -232,7 +232,8 @@ section:nth-child(3) article:nth-child(2) {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-bottom: 5vh;
+    margin-bottom: 5%;
+    font-size: 1.8em;
     
     
 }
@@ -244,9 +245,236 @@ small{
 section p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
-    font-size: 3.5em;
+    font-size: 1.5em;
     text-align: center;
     color: beige;
+}
+
+h4 {
+  text-transform: uppercase;
+  margin-top: 40px;
+  disply: block;
+  font-family: 'Baloo Bhaina';
+}
+
+#cards-container {
+  width: 100%;
+  height: auto;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.card-wrapper {
+  width: 40%;
+  text-align: center;
+  padding: 20px;
+}
+
+.card2 {
+  height: 280px;
+  width: 300px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 5px 5px gray;
+  background-color: #fff;
+  padding: 0;
+  z-index: 0;
+}
+
+.card-top {
+  height: 100px;
+  position: relative;
+  background-color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.icon {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #d3d3d3;
+  border: 5px solid #fff;
+  box-sizing: border-box;
+  left: 100px;
+  top: 40PX;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.9rem;
+}
+
+.card-content {
+  padding: 10px;
+  height: auto;
+  background-color: #fff;
+  height: 100%;
+}
+
+.card-title {
+  color: #OOO;
+}
+
+.card-content p,
+.overlay p {
+  font-family: 'Raleway', sans-serif;
+  color: #333;
+  padding: 10px;
+}
+
+.overlay p {
+  color: #fff;
+}
+
+
+/* card-top colors */
+
+.gradient-red {
+  background: linear-gradient( to top, transparent, #CB422A), linear-gradient( to bottom, transparent, rgba(0, 0, 0, 0.8));
+}
+
+.gradient-blue {
+  background: linear-gradient( to top, transparent, #2D699B), linear-gradient( to bottom, transparent, rgba(0, 0, 0, 0.8));
+}
+
+.gradient-green {
+  background: linear-gradient(to top right, transparent, #00A482), linear-gradient( to bottom left, transparent, rgba(0, 0, 0, 0.8));
+}
+
+.gradient-pink {
+  background: linear-gradient(to bottom left, transparent, #CE3B67), linear-gradient( to top right, transparent, rgba(0, 0, 0, 0.8));
+}
+
+
+/* overlay  */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 280px;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #FFF;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+/*overlay-btn  */
+
+.overlay-btn {
+  background-color: transparent;
+  color: #FFF;
+  font-family: 'Railway', sans-serif;
+  font-weight: bold;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid #FFF;
+  transiton: all 0.2s ease;
+}
+
+.overlay-btn:hover {
+  color: #FFF39A;
+  background-color: transparent;
+  border-bottom: 1px solid #FFF39A;
+  transform: scale(1);
+}
+
+
+/* slide */
+
+.slider3 {
+  transform: translateX(-100%);
+  transition: all 0.4s ease-out;
+}
+
+.card2:hover .slider3 {
+  transform: translateX(0);
+}
+
+
+/* fade*/
+
+.fade {
+  transition: all 0.6s ease-in;
+  opacity: 0;
+}
+
+.card2:hover .fade {
+  opacity: 1;
+}
+
+
+/* Zoom */
+
+.zoom {
+  opacity: 0;
+  transition: all 0.7s ease-in;
+  border-radius: 5px;
+  transform: scale(0);
+}
+
+.card2:hover .zoom {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+
+/* flip */
+
+.flip-container {
+  perspective: 1000px;
+}
+
+.flip-card {
+  transition: transform 3s ease;
+  transform-style: preserve-3d;
+  poistion: relative;
+}
+
+.front,
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 280px;
+  width: 300px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.front {
+  z-index: 5;
+  background-color: #fff;
+}
+
+.back {
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #FFF;
+  justify-content: center;
+  padding: 10px;
+  transform: rotateY(180deg);
+}
+
+.flip-card:hover {
+  transform: rotateY(180deg);
+}
+
+.flip-card:hover .back {
+  transform: rotateY(-180deg);
 }
 
 section:nth-child(4) {
@@ -328,8 +556,8 @@ section:nth-child(4) {
     padding-top: 5%
 }
 .equipo{
-    text-align: left;
-    font-size: 2em;
+    text-align: center;
+    font-size: 1.5em;
 }
 
 body section article img{
@@ -337,7 +565,73 @@ body section article img{
     position: relative;
 }
 
-body footer{
+body section article img{
+    width: 100%;
+    position: relative;
+}
+section:nth-child(7){
+    background: linear-gradient(to right, #add100, #7b920a);
+    background: linear-gradient(to right, #000000, #53346d);
+      background: linear-gradient(to right, #606c88, #3f4c6b);
+      background: linear-gradient(to right, #649173, #dbd5a4);
+      background: linear-gradient(to right, #414d0b, #727a17);
+      background: linear-gradient(to right, #000000, #0f9b0f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+
+}
+
+.card-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.card-container:hover .card {
+  opacity: .7;
+  cursor: pointer;
+  filter: grayscale(1);
+}
+.card-container .card {
+  margin: 10px;
+  width: calc(100% / 3 - 20px);
+  float: left;
+  box-shadow: 0 0 2px 2px rgba(0,0,0,.05);
+  background: #FFF;
+  -webkit-transition: .3s all ease;
+  transition: .15s all ease;
+}
+.card-container .card:hover {
+  box-shadow: 0 0 8px 3px rgba(0,0,0,.15);
+  transform: scale(1.025);
+  opacity: 1;
+  filter: grayscale(0);
+  transition: .35s all ease;
+}
+.card-container .card img {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.card-container .card .content {
+  padding: 15px 20px;
+}
+.card-container .card h3 {
+  font: 2.8rem/3.4rem 'Bree Serif', serif;
+  padding: 0;
+  margin: 0 0 10px;
+  letter-spacing: -.075rem
+}
+.card-container .card p {
+  color: #888;
+  padding: 0;
+  margin: 0;
+  font: 400 1.5rem/2.2rem 'Open Sans script=all', sans-serif;
+}
+
+footer{
      background-color: #79AE07;
     
 }
@@ -356,6 +650,7 @@ footer address{
    
     display: flex;
         flex-direction: column;
+        width: 100%;
     }
         
     section:nth-child(3){
