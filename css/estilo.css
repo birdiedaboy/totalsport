@@ -302,8 +302,8 @@ section:nth-child(4) {
 
 .marcas{
     display: flex;
-    align-content: space-between;
-    align-items: flex-end;
+    justify-content: space-around;
+    align-items: center;
     padding: 1%;
     background-color: rgba(121,174,7,1.00);
     
@@ -312,15 +312,20 @@ section:nth-child(4) {
 
 .marcas img {
     height: 20%;
-    width: 25%;
+    width: 15%;
 }
 
 .equipogeneral {
     background-image: url(../img/darkness.png);
-    height: 50%;
-    padding-top: 15vh;
+    min-height: 100%;
+    padding: 5%;
     display: flex;
     justify-content: space-around;
+    flex-flow: wrap;
+}
+.titu{
+    background-image: url(../img/darkness.png);
+    padding-top: 5%
 }
 .equipo{
     text-align: left;
