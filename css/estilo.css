@@ -208,10 +208,9 @@ section:nth-child(2) {
 
 section:nth-child(3) {
     box-sizing: border-box;
-    
     min-height: 100%;
     background-image: url(../img/darkness.png);
-    padding: 10%;
+    padding: 5%;
 }
 
 h2{
@@ -224,7 +223,7 @@ h2{
 }
 
 section:nth-child(3) article:nth-child(2) {
-    margin-top: 6vh;
+    margin-top: 5%;
 }
 
 .planes{
@@ -233,7 +232,7 @@ section:nth-child(3) article:nth-child(2) {
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 5%;
-    font-size: 1.8em;
+    font-size: 1.5em;
     
     
 }
@@ -265,7 +264,7 @@ h4 {
 }
 
 .card-wrapper {
-  width: 40%;
+  width: 30%;
   text-align: center;
   padding: 20px;
 }
@@ -335,9 +334,8 @@ h4 {
 .gradient-red {
   background: linear-gradient( to top, transparent, #CB422A), linear-gradient( to bottom, transparent, rgba(0, 0, 0, 0.8));
 }
-
 .gradient-blue {
-  background: linear-gradient( to top, transparent, #2D699B), linear-gradient( to bottom, transparent, rgba(0, 0, 0, 0.8));
+  background: linear-gradient(0deg, rgba(105,180,51,1.00) 0%, rgba(230,228,19,1.00) 100%);
 }
 
 .gradient-green {
