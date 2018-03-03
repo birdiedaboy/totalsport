@@ -206,11 +206,11 @@ section:nth-child(2) {
 }
 
 
-section:nth-child(3) {
+section:nth-child(7) {
     box-sizing: border-box;
     min-height: 100%;
     background-image: url(../img/darkness.png);
-    padding: 5%;
+    padding: 0%;
 }
 
 h2{
@@ -222,7 +222,7 @@ h2{
     
 }
 
-section:nth-child(3) article:nth-child(2) {
+section:nth-child(7) article:nth-child(2) {
     margin-top: 5%;
 }
 
@@ -566,17 +566,39 @@ body section article img{
     width: 100%;
     position: relative;
 }
-section:nth-child(7){
+section:nth-child(3){
+    padding-top: 8%;
+    
     background: linear-gradient(to right, #add100, #7b920a);
     background: linear-gradient(to right, #000000, #53346d);
       background: linear-gradient(to right, #606c88, #3f4c6b);
       background: linear-gradient(to right, #649173, #dbd5a4);
       background: linear-gradient(to right, #414d0b, #727a17);
-      background: linear-gradient(to right, #000000, #0f9b0f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: linear-gradient(to right, #000000, #0f9b0f);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: 
+				linear-gradient(135deg, #6FB437 25%, transparent 25%) -50px 0,
+				linear-gradient(225deg, #6FB437 25%, transparent 25%) -50px 0,
+				linear-gradient(315deg, #6FB437 25%, transparent 25%),
+				linear-gradient(45deg, #6FB437 25%, transparent 25%);	
+				background-size: 100px 100px;
+				background-color: #1F1F1F;
+        
+        /* Animation defaults to a .3s loop */
+				-webkit-animation: backgroundAnimate 6s linear infinite;
+  
+}
 
+/* The Animation, switch the -100px to +100px to reverse */
+@-webkit-keyframes backgroundAnimate{
 
-
-
+  from{
+    background-position: 50px 0, 50px 0, 0 0, 0 0;
+  }
+  
+  to{
+    background-position: 50px -100px, 50px -100px, 0 -100px, 0 -100px;    
+  }
 }
 
 .card-container {
