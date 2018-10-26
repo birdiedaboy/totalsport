@@ -725,9 +725,11 @@ footer address{
   z-index: 0;
 }
     section:nth-child(3){
-    padding-top: 25%;
-    
-  
+    padding-top: 25%;  
 }
+    #adios {
+    visibility: hidden;
+    display: none;
+  }
 }
 
